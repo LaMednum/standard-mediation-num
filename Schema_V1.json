@@ -24,10 +24,10 @@
     "uri":"https://github.com/etalab/schema-lieux-covoiturage/raw/v0.2.0/schema.json",
 	"fields": [
 		{
-			"name": "ID",
-			"title": "Identifiant unique de chaque entrée",
-			"description": "Identifiant unique de chaque entrée sous la forme : l'identifiant du service archives, année d'entrée et numéro incrémental.",
-            "type": "string",
+			"name": "",
+			"title": "",
+			"description": "",
+			"type": "string",
 			"constraints": {
 				"required": true
 			}
