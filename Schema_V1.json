@@ -1,11 +1,11 @@
 {
     "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
-    "title": "Lieux de médiation numérique",
-    "description": "Spécification du standard national des lieux de médiation numérique",
+    "title": "Registre d'entrée d'archives",
+    "description": "Spécification du standard national des registres d'entrée d'archives",
     "keywords": [
-        "médiation numérique",
-        "médiation",
-        "inclusion"
+        "archives",
+        "archivage",
+        "documents"
     ],
     "countryCode": "FR",
     "licenses": [
@@ -15,15 +15,15 @@
             "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
         }
     ],
-    "author": "Datactivist et la MedNum pour l'Agence nationale de la cohésion des territoires (ANCT)",
-    "contact": "contact@mednum.fr",
+    "author": "Datactivist pour l'Association des Archivistes Français (AAF) et le service interministériel des Archives de France (SIAF)",
+    "contact": "hello@datactivist.coop",
     "contributors": [
         {
-            "organisation": "La MedNum",
+            "organisation": "Service Interministériel des Archives de France",
             "role": "contributor"
         },
         {
-            "organisation": "Agence nationale de la cohésion des territoires",
+            "organisation": "Association des Archivistes Français",
             "role": "contributor"
         },
         {
@@ -31,68 +31,55 @@
             "role": "contributor"
         },
         {
-            "organisation": "Les Assembleurs",
+            "organisation": "Archives départementales de l'Eure",
             "role": "contributor"
         },
         {
-            "organisation": "Francil'IN",
+            "organisation": "Archives départementales de l'Oise",
             "role": "contributor"
         },
         {
-            "organisation": "Hubik",
+            "organisation": "Archives municipales d'Avignon",
             "role": "contributor"
         },
         {
-            "organisation": "Métropole européenne de Lille",
+            "organisation": "Archives nationales",
             "role": "contributor"
         },
         {
-            "organisation": "Métropole de Lyon",
+            "organisation": "Archives régionales des Pays-de-la-Loire",
             "role": "contributor"
         },
         {
-            "organisation": "Bordeaux Métropole",
-            "role": "contributor"
-        },
-         {
-            "organisation": "Région Sud",
+            "organisation": "INHA, Université de Paris Nanterre",
             "role": "contributor"
         },
         {
-            "organisation": "Emmaüs Connect",
-            "role": "contributor"
-        }
-        {
-            "organisation": "Open Data France",
-            "role": "contributor"
-        },
-        {
-            "organisation": "Startup d'État Conseiller numérique, projet cartographie nationale",
+            "organisation": "Programme Vitam",
             "role": "contributor"
         }
     ],
-    "version": "1.0",
-    "created": "2022-07-04",
-    "updated": "2022-07-04",
-    "homepage": "https://github.com/LaMednum/standard-mediation-num",
+    "version": "0.2.0",
+    "created": "2020-12-17",
+    "updated": "2021-04-29",
+    "homepage": "https://github.com/Archivistes75/registre_entrees",
     "uri": "https://raw.githubusercontent.com/Archivistes75/registre_entrees/raw/v0.2.0/schema.json",
     "fields": [
         {
-            "name": "ID",
-            "title": "Identifiant unique de chaque entrée",
-            "description": "Identifiant unique de chaque entrée composés de ces trois éléments séparés par des tirets bas : l'identifiant du service archives, année d'entrée et un identifiant unique (numéro incrémental, identifiant technique...) L'identifiant du service d'archives peut être composé soit du numéro utilisé pour identifier les IR, ou pour des services d'entreprises le SIREN ou pour d'autres types de services le RCR, le numéro Muséophile. Dans ce cas, il faut renseigner cet éléments dans les métadonnées associées.",
-            "example": "FRAC_13001_2020_001, FRAN_2020_aeaqaaaabehgml5fab7gialyq46s4jyaaaca",
+            "name": "id",
+            "title": "Identifiant unique local du lieu",
+            "description": "Ce champ contient un identifiant unique local. Le producteur de donnée le génère librement selon sa méthode. Il peut par exemple s'agir d'une suite de lettres et/ou de chiffres, ou d'un UUID (universal unique identifier) produit aléatoirement : https://www.uuidgenerator.net/ Ce champ permet d'éviter localement les doublons, par exemple dans le cas où deux lieux auraient le même SIRET. Il est un pré-requis pour assurer la compatibilité avec le référentiel national sur l'offre d'insertion : https://www.data.inclusion.beta.gouv.fr/",
+            "example": "structure-1",
             "type": "string",
             "constraints": {
-                "required": true,
-                "pattern": ".*_[0-9]{4}_.*"
+                "required": true
             }
         },
         {
-            "name": "nomArch",
-            "title": "Nom du service archives",
-            "description": "Nom sous forme textuelle du service d'archives dans où sont entrées les archives",
-            "example": "Archives municipales d'Aix-en-Provence",
+            "name": "pivot",
+            "title": "SIRET ou RNA",
+            "description": "Ce champ contient une donnée pivot provenant d'une des deux bases de référence : le répertoire SIRENE des entreprises et de leurs établissements de l'Insee ou le Répertoire national des associations du ministère de l'intérieur (RNA). Pour chaque lieu, il faut indiquer soit le code SIRET (dont disposent la majorité des associations) récupérable via annuaire-entreprises.data.gouv.fr soit le numéro RNA (Répertoire National des Associations) du lieu récupérable via journal-officiel.gouv.fr/pages/associations-recherche/. Les associations disposant d'un SIRET doivent renseigner uniquement ce code. Le RNA n'est à renseigner que dans le cas où une association ne disposerait pas de SIRET. Dans la mesure du possible, les concepteurs du schéma mettrons à disposition des outils pour associer facilement les données au SIRET correspondant. Dans le cas où le SIRET concernerait plusieurs lieux (plusieurs bibliothèques rattachées à une même commune par exemple), l'identification unique permettra de les dédoublonner. Ce champ est un pré-requis pour assurer la compatibilité avec data.inclusion. ",
+            "example": "Anonymal",
             "type": "string",
             "constraints": {
                 "required": true
@@ -314,96 +301,6 @@
             "title": "nombre d'articles",
             "description": "permet d'indiquer le nombre d'articles d'une entrée",
             "example": "56",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
             "type": "number",
             "constraints": {
                 "required": false
