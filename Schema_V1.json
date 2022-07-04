@@ -184,7 +184,7 @@
             "example": "13001_3079_00001",
             "type": "string",
             "constraints": {
-                "required": false,
+                "required": false
             }
         },
         {
@@ -194,7 +194,7 @@
             "example": "TIERS_LIEUX,ASSO",
             "type": "string",
             "constraints": {
-                "required": false,
+                "required": false
             }
         },
         {
@@ -234,7 +234,7 @@
             "example": "Mo-Fr 09:00-12:00,14:00-18:30; Sa 08:30-12:00",
             "type": "string",
             "constraints": {
-                "required": false,
+                "required": false
             }
         },
         {
@@ -244,8 +244,8 @@
             "example": "Notre association propose des formations aux outils numériques à destination des personnes âgées.",
             "type": "string",
             "constraints": {
-                "required": false
-                "maxLength": 500,
+                "required": false,
+                "maxLength": 500
             }
         },
         {
