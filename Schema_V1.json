@@ -36,15 +36,15 @@
 			"name": "nomArch",
 			"title": "Nom du service archives",
 			"description":"Nom sous forme textuelle du service d'archives dans où sont entrées les archives",
-            "type": "string",
+			"type": "string",
 			"constraints": {
 				"required": true			}
 		},
 		{
-			"name": "coteArch",
-			"title": "Cotation",
-			"description": "identifiant de l'entrée d’archives et correspondant à sa place dans le cadre de classement (série et sous-série)",
-            "type": "string",
+			"name": "",
+			"title": "",
+			"description": "",
+			"type": "string",
 			"constraints": {
 				"required": false
 			}
