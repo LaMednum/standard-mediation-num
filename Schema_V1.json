@@ -198,76 +198,72 @@
             }
         },
         {
-            "name": "descContenu",
-            "title": "description du contenu",
-            "description": "Permet de décrire le contenu des archives de l'entrée",
-            "example": "Marchés publics de prestations intellectuelles",
+            "name": "telephone",
+            "title": "Numéro de téléphone",
+            "description": "Ce champ contient un numéro de téléphone du lieu. Le format international doit être respecté : le premier zéro suivant l'indicatif pays (+33) est supprimé et il n'y a pas d'espaces.",
+            "example": "+33180059880",
             "type": "string",
             "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "datesExD",
-            "title": "Date extrême de début",
-            "description": "date du plus vieux document d'archives format AAAA.",
-            "example": "2014",
-            "type": "year",
-            "constraints": {
                 "required": false
             }
         },
         {
-            "name": "datesExF",
-            "title": "Date extrême de fin",
-            "description": "date du plus récent document d'archives format AAAA.",
-            "example": "2020",
-            "type": "year",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "natureSupport",
-            "title": "nature du support matériel des documents",
-            "description": "permet d'indiquer de façon macro la typologie de support des documents",
-            "example": "Support physique",
+            "name": "courriel",
+            "title": "Courriel",
+            "description": "Ce champ contient l'adresse email générique de contact du lieu.",
+            "example": "contact@laquincaillerie.tl",
             "type": "string",
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Support physique",
-                    "Support électronique",
-                    "Support mixte"
-                ]
+                "required": false
             }
         },
         {
-            "name": "mlEntree",
-            "title": "métrage linéaire de l'entrée",
-            "description": "volume en mètre linéaire de l'entrée. le séparateur décimal doit être le point . L'unité sera rappelée en métadonnée.",
-            "example": "1.60",
-            "type": "number",
+            "name": "site_web",
+            "title": "Site web",
+            "description": "Ce champ contient une ou plusieurs URL vers le site internet du lieu et/ou les réseaux sociaux. Pour renseigner plusieurs URL, il est nécessaire de les séparer par une virgule, sans espace.",
+            "example": "https://www.laquincaillerie.tl/,https://m.facebook.com/laquincaillerienumerique/",
+            "type": "string",
             "constraints": {
                 "required": false
             }
         },
         {
-            "name": "nbreArt",
-            "title": "nombre d'articles",
-            "description": "permet d'indiquer le nombre d'articles d'une entrée",
+            "name": "horaire",
+            "title": "Horaires",
+            "description": "Ce champ indique les jours et horaires d'ouverture du lieu, en respectant le format proposé par OpenStreetMap. L'outil YoHours permet de générer des horaires au bon format. Le format OSM permet d'indiquer des exceptions pendant certaines périodes (vacances, jours fériés…). Pour les générer au bon format en utilisant YoHours, il suffit de les renseigner en cliquant sur le bouton 'plus' vert, situé en haut à gauche.",
+            "example": "Mo-Fr 09:00-12:00,14:00-18:30; Sa 08:30-12:00",
+            "type": "string",
+            "constraints": {
+                "required": false,
+            }
+        },
+        {
+            "name": "presentation_resume",
+            "title": "Présentation résumée",
+            "description": "Ce champ contient une courte description du lieu (500 caractères maximum).",
+            "example": "Notre association propose des formations aux outils numériques à destination des personnes âgées.",
+            "type": "string",
+            "constraints": {
+                "required": false
+                "maxLength": 500,
+            }
+        },
+        {
+            "name": "presentation_detail",
+            "title": "Présentation détaillée",
+            "description": "Ce champ contient une description plus détaillée du lieu. Il est par exemple possible de préciser si des aidants sont itinérants.",
             "example": "56",
-            "type": "number",
+            "type": "string",
             "constraints": {
                 "required": false
             }
         },
         {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "number",
+            "name": "source",
+            "title": "Structure collectant la donnée",
+            "description": "La valeur de ce champ détaille la structure qui a collecté les données sur le lieu. Cela peut être la structure elle-même ou une structure tierce (une collectivité territoriale, un réseau de médiation numérique...)",
+            "example": "Hubik",
+            "type": "string",
             "constraints": {
                 "required": false
             }
