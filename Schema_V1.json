@@ -319,7 +319,7 @@
             "name": "publics_accueillis",
             "title": "Publics accueillis",
             "description": "Ce champ permet d'informer sur les types de publics que le lieu est en mesure d'accueillir.",
-            "example": "2.30, 0.075",
+            "example": "Familles/enfants,Adultes,Déficience visuelle",
             "type": "string",
             "constraints": {
                 "required": false,
@@ -339,60 +339,86 @@
             }
         },
         {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
+            "name": "conditions_access",
+            "title": "Conditions d'accès",
+            "description": "Ce champ indique les conditions financières d'accès au lieu.",
+            "example": "Payant,Gratuit",
+            "type": "string",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "Gratuit : je peux accéder gratuitement au lieu et à ses services",
+                    "Gratuit sous condition : la gratuité est conditionnée à des critères (situation familiale, convention avec un organisme social...)", 
+                    "Payant : L'accès au lieu et/ou à ses services est payant",
+                    "Adhésion : L'accès au lieu et/ou à ses services nécessite d'y adhérer",
+                    "Accepte le pass numérique : Il est possible d'utiliser un pass numérique pour accéder au lieu"
+                ]
+            }
+        },
+        {
+            "name": "labels_nationaux",
+            "title": "Labels nationaux",
+            "description": "Ce champ indique si le lieu a obtenu un ou plusieurs labels nationaux.",
+            "example": "France Services,APTIC,Point relais CAF",
+            "type": "string",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "France Services",
+                    "CNFS",
+                    "APTIC",
+                    "AIdants Connect",
+                    "Fabriques de Territoire",
+                    "Grandes écoles du numérique",
+                    "Point relais CAF",
+                    "Point numérique CAF",
+                    "Relais pôle emploi",
+                    "French Tech",
+                    "Campus connecté"
+                ]
+            }
+        },
+        {
+            "name": "labels_autres",
+            "title": "Autres labels",
+            "description": "Ce champ permet de préciser si le lieu a obtenu d'autres labels (régionaux, locaux...)",
+            "example": "SudLabs,Nièvre médiation numérique",
             "type": "string",
             "constraints": {
                 "required": false
             }
         },
         {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
+            "name": "modalités_accompagnement",
+            "title": "Modalités d'accompagnement",
+            "description": "Ce champ indique les types d'accompagnement proposés par le lieu. Il est possible de renseigner plusieurs valeurs.",
+            "example": "Seul,Avec de l'aide",
+            "type": "string",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "Seul : j'ai accès à du matériel et une connexion",
+                    "Avec de l'aide : je suis accompagné seul dans l'usage du numérique",
+                    "Dans un atelier : j'apprends collectivement à utiliser le numérique",
+                    "A ma place : une personne habilitée fait les démarches à ma place"
+                ]
+            }
+        },
+        {
+            "name": "accessibilite",
+            "title": "Accessibilité / accueil handicap",
+            "description": "Ce champ contient une url renvoyant vers le profil Acceslibre du lieu : https://acceslibre.beta.gouv.fr/. Acceslibre est un service public porté par le Ministère de la Transition Écologique afin de collecter et de partager les données d'accessibilité des établissements recevant du public. Le remplissage d'une fiche prend moins de 5 minutes.",
+            "example": "https://acceslibre.beta.gouv.fr/app/29-lampaul-plouarzel/a/bibliotheque-mediatheque/erp/mediatheque-13/",
             "type": "string",
             "constraints": {
                 "required": false
             }
         },
         {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "volElec",
-            "title": "volume d'archives électroniques de l'entrée",
-            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
-            "example": "2.30, 0.075",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "objElec",
-            "title": "nombre d'objets électroniques",
-            "description": "permet d'indiquer le nombre d'objets électroniques d'une entrée",
-            "example": "234",
+            "name": "prise_rdv",
+            "title": "Prise de rdv",
+            "description": "Ce champ contient une url renvoyant vers le site de prise de rendez-vous en ligne avec les aidants du lieu.",
+            "example": "https://www.rdv-solidarites.fr/",
             "type": "string",
             "constraints": {
                 "required": false
