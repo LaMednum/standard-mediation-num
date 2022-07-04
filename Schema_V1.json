@@ -138,101 +138,63 @@
             }
         },
         {
-            "name": "orgaVers",
-            "title": "organisation qui verse l'entrée",
-            "description": "Nom de l'organisation qui a versé l'entrée, distincte du service qui a produit les entrées dans l'organisation. Dans le cas où des identifiants pérennes existent pour identifier les organisations versantes, elles peuvent être ajoutées en complément du nom de l'organisation : URI - Nom de l'organisation. Ce champ peut comporter plusieurs valeurs, dans ce cas, les éléments sont séparés par une barre verticale |.",
-            "example": "Ville d'Aix-en-Provence, FR78422804100033_000000011 - Tribunal administratif",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "servVers",
-            "title": "service qui verse l'entrée",
-            "description": "permet d'identifier la personne physique ou morale qui a transféré les documents",
-            "example": "Service de l'Achat public",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "orgaProducteur",
-            "title": "organisation productrice de l'entrée",
-            "description": "nom de l'organisation qui a produit l'entrée, distincte du service qui a produit les entrées dans l'organisation. Dans le cas où des identifiants pérennes existent pour identifier les organisations versantes, elles peuvent être ajoutées en complément du nom de l'organisation : URI - Nom de l'organisation. Ce champ peut comporter plusieurs valeurs, dans ce cas, les éléments sont séparés par une barre verticale |.",
-            "example": "Ville d'Aix-en-Provence, FR78422804100033_000000011 - Tribunal administratif",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "servProd",
-            "title": "service producteur",
-            "description": "permet d'identifier la personne physique ou morale qui a produit les documents. Si le producteur est inconnu, saisir `Service producteur inconnu`.",
-            "example": "Service de l'Achat public, Service producteur inconnu",
+            "name": "adresse",
+            "title": "Adresse",
+            "description": "Ce champ contient les éléments de l'adresse du lieu relatifs à la voie. Typiquement, <numero_voie> <indice_de_repetition> <type_voie> <libelle_voie>. Le site national des adresses permet de rechercher une adresse (voie, lieu-dit, commune, code postal) : adresse.data.gouv.fr",
+            "example": "12 BIS RUE DE LECLERCQ",
             "type": "string",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "typeProd",
-            "title": "fonction du producteur",
-            "description": "permet d'identifier la fonction du producteur, liste établie à partir des éléments du SIAF. La séparation entre type et activité répond à la nouvelle organisation définie pa le SIAF et mise en place au sein de l'enquête annuelle.",
-            "example": "Commune et établissement public communal",
+            "name": "complement_adresse",
+            "title": "Complément d'adresse",
+            "description": "Ce champ contient des éléments permettant de préciser l'adresse et la situation exactes du lieu, afin d'en permettre l'accès aux usagers. Cela peut être un numéro d'appartement, un étage, un lieu-dit, etc.",
+            "example": "Le patio du bois de l'Aulne",
             "type": "string",
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Présidence de la République",
-                    "Premier ministre",
-                    "Ministère (administration centrale) ",
-                    "Assemblée parlementaire",
-                    "Grand organe de contrôle",
-                    "Service déconcentré et établissement public de l’État à compétence départementale ou locale",
-                    "Service déconcentré et établissement public de l’État à compétence régionale ou supra-départementale",
-                    "Etablissement public national",
-                    "Commune et établissement public communal",
-                    "Conseil départemental et établissement public départemental",
-                    "Conseil régional et établissement public régional",
-                    "Structure de coopération intercommunale ou interdépartementale",
-                    "Établissement public de santé",
-                    "Organisme de droit privé chargé d’une mission de service public",
-                    "Officier public ou ministériel (dont notaire) ",
-                    "Producteur privé"
-                ]
+                "required": false
             }
         },
         {
-            "name": "activiteProd",
-            "title": "Domaine ou thématique d'action du producteur",
-            "description": "permet d'identifier la fonction du producteur, liste établie à partir des éléments du SIAF. La séparation entre type et activité répond à la nouvelle organisation définie pa le SIAF et mise en place au sein de l'enquête annuelle. Ce champ peut comporter plusieurs valeurs, dans ce cas, les éléments sont séparés par une barre verticale |",
-            "example": "Administration générale (fonctions transverses, RH) | Culture, jeunesse et sports",
+            "name": "latitude",
+            "title": "Latitude",
+            "description": "Ce champ contient la latitude du lieu, dans le système WGS84 (GPS), typiquement issue du géocodage de son adresse et pouvant servir à la localiser. Il est possible de copier les coordonnées GPS depuis le site : adresse.data.gouv.fr",
+            "example": "43.52609",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "longitude",
+            "title": "Longitude",
+            "description": "Ce champ contient la longitude du lieu, dans le système WGS84 (GPS), typiquement issue du géocodage de son adresse et pouvant servir à la localiser. Il est possible de copier les coordonnées GPS depuis le site : adresse.data.gouv.fr",
+            "example": "5.41423",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "cle_ban",
+            "title": "Clé nationale d’interopérabilité de l'adresse",
+            "description": "Cet identifiant est la clé nationale d’interopérabilité de la Base Adresse Nationale (BAN). Il permet de distinguer plus facilement les lieux entre les bases, notamment quand le SIRET est identique à plusieurs lieux.  Il désigne une valeur unique à chaque adresse, il peut être récupéré facilement en recherchant l’adresse du lieu sur le site : adresse.data.gouv.fr ",
+            "example": "13001_3079_00001",
             "type": "string",
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Instance de délibération",
-                    "Direction, cabinet",
-                    "Administration générale (fonctions transverses, RH)",
-                    "Finances, fiscalité", "Économie, industrie", "Agriculture",
-                    "Équipement, environnement",
-                    "Travail, emploi",
-                    "Affaires sociales, santé",
-                    "Justice",
-                    "Police, protection civile, intérieur",
-                    "Éducation, recherche",
-                    "Culture, jeunesse et sports",
-                    "Défense, anciens combattants",
-                    "Outre-mer",
-                    "Archives privées personnelles et familiales",
-                    "Archives privées cultuelles",
-                    "Archives privées d'associations, de partis politiques, de syndicats",
-                    "Archives privées d'entreprises",
-                    "Archives privées professionnelles"
-                ]
+                "required": false,
+            }
+        },
+        {
+            "name": "typologie",
+            "title": "Typologie",
+            "description": "La valeur de ce champ indique le type du lieu : CCAS, ASSO, COMMUNE, etc. Les valeurs possibles (il est possible d'en renseigner plusieurs) sont restreintes au vocabulaire décrivant les types de structures : https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-dinsertion/typologies-de-structure",
+            "example": "TIERS_LIEUX,ASSO",
+            "type": "string",
+            "constraints": {
+                "required": false,
             }
         },
         {
