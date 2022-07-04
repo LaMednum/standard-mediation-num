@@ -1,11 +1,11 @@
 {
     "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
-    "title": "Registre d'entrée d'archives",
-    "description": "Spécification du standard national des registres d'entrée d'archives",
+    "title": "Lieux de médiation numérique",
+    "description": "Spécification du standard national des lieux de médiation numérique",
     "keywords": [
-        "archives",
-        "archivage",
-        "documents"
+        "médiation numérique",
+        "médiation",
+        "inclusion"
     ],
     "countryCode": "FR",
     "licenses": [
@@ -15,15 +15,15 @@
             "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
         }
     ],
-    "author": "Datactivist pour l'Association des Archivistes Français (AAF) et le service interministériel des Archives de France (SIAF)",
-    "contact": "hello@datactivist.coop",
+    "author": "Datactivist et la MedNum pour l'Agence nationale de la cohésion des territoires (ANCT)",
+    "contact": "contact@mednum.fr",
     "contributors": [
         {
-            "organisation": "Service Interministériel des Archives de France",
+            "organisation": "La MedNum",
             "role": "contributor"
         },
         {
-            "organisation": "Association des Archivistes Français",
+            "organisation": "Agence nationale de la cohésion des territoires",
             "role": "contributor"
         },
         {
@@ -31,38 +31,50 @@
             "role": "contributor"
         },
         {
-            "organisation": "Archives départementales de l'Eure",
+            "organisation": "Les Assembleurs",
             "role": "contributor"
         },
         {
-            "organisation": "Archives départementales de l'Oise",
+            "organisation": "Francil'IN",
             "role": "contributor"
         },
         {
-            "organisation": "Archives municipales d'Avignon",
+            "organisation": "Hubik",
             "role": "contributor"
         },
         {
-            "organisation": "Archives nationales",
+            "organisation": "Métropole européenne de Lille",
             "role": "contributor"
         },
         {
-            "organisation": "Archives régionales des Pays-de-la-Loire",
+            "organisation": "Métropole de Lyon",
             "role": "contributor"
         },
         {
-            "organisation": "INHA, Université de Paris Nanterre",
+            "organisation": "Bordeaux Métropole",
+            "role": "contributor"
+        },
+         {
+            "organisation": "Région Sud",
             "role": "contributor"
         },
         {
-            "organisation": "Programme Vitam",
+            "organisation": "Emmaüs Connect",
+            "role": "contributor"
+        }
+        {
+            "organisation": "Open Data France",
+            "role": "contributor"
+        },
+        {
+            "organisation": "Startup d'État Conseiller numérique, projet cartographie nationale",
             "role": "contributor"
         }
     ],
-    "version": "0.2.0",
-    "created": "2020-12-17",
-    "updated": "2021-04-29",
-    "homepage": "https://github.com/Archivistes75/registre_entrees",
+    "version": "1.0",
+    "created": "2022-07-04",
+    "updated": "2022-07-04",
+    "homepage": "https://github.com/LaMednum/standard-mediation-num",
     "uri": "https://raw.githubusercontent.com/Archivistes75/registre_entrees/raw/v0.2.0/schema.json",
     "fields": [
         {
