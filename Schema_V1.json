@@ -230,7 +230,7 @@
         {
             "name": "horaire",
             "title": "Horaires",
-            "description": "Ce champ indique les jours et horaires d'ouverture du lieu, en respectant le format proposé par OpenStreetMap. L'outil YoHours permet de générer des horaires au bon format. Le format OSM permet d'indiquer des exceptions pendant certaines périodes (vacances, jours fériés…). Pour les générer au bon format en utilisant YoHours, il suffit de les renseigner en cliquant sur le bouton 'plus' vert, situé en haut à gauche.",
+            "description": "Ce champ indique les jours et horaires d'ouverture du lieu, en respectant le format proposé par OpenStreetMap (https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours). L'outil YoHours (https://projets.pavie.info/yohours/) permet de générer des horaires au bon format. Le format OSM permet d'indiquer des exceptions pendant certaines périodes (vacances, jours fériés…). Pour les générer au bon format en utilisant YoHours, il suffit de les renseigner en cliquant sur le bouton 'plus' vert, situé en haut à gauche.",
             "example": "Mo-Fr 09:00-12:00,14:00-18:30; Sa 08:30-12:00",
             "type": "string",
             "constraints": {
