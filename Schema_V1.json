@@ -317,6 +317,96 @@
             }
         },
         {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "volElec",
+            "title": "volume d'archives électroniques de l'entrée",
+            "description": "correspond à la volumétrie de fichiers électroniques présents dans l'entrée en Go. le séparateur décimal doit être le point. L'unité sera le Go et sera rappelée en métadonnées.",
+            "example": "2.30, 0.075",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
             "name": "objElec",
             "title": "nombre d'objets électroniques",
             "description": "permet d'indiquer le nombre d'objets électroniques d'une entrée",
