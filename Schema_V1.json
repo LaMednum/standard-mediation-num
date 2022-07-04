@@ -98,61 +98,43 @@
             }
         },
         {
-            "name": "coteArch",
-            "title": "Cotation",
-            "description": "Identifiant de l'entrée d’archives et correspondant à sa place dans le cadre de classement (série et sous-série). Dans le cas où les articles sont connus dès l'entrée, ils peuvent être ajoutés à la cotation (mais cela reste optionnel).",
-            "example": "1238W, 1240W 1-12",
+            "name": "nom",
+            "title": "Nom",
+            "description": "Ce champ contient le nom du lieu.",
+            "example": "Anonymal",
             "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
-            "name": "dateEntree",
-            "title": "Date d'entrée",
-            "description": "date à laquelle les documents sont entrés dans le service d'archives au format ISO8601",
-            "example": "2020-08-26",
-            "type": "date",
-            "format": "default",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "statutJur",
-            "title": "nature juridique des documents entrés",
-            "description": "permet d'identifier le statut juridique des archives",
-            "example": "Archives publiques",
+            "name": "commune",
+            "title": "Commune",
+            "description": "Ce champ contient le nom de la commune rattachée à l'adresse du lieu. Le site national des adresses permet de rechercher une adresse (voie, lieu-dit, commune, code postal) : adresse.data.gouv.fr",
+            "example": "Reims",
             "type": "string",
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Archives publiques",
-                    "Archives privées",
-                    "Archives publiques et privées"
-                ]
+                "required": true
             }
         },
         {
-            "name": "modeEntree",
-            "title": "modalité d'entrée",
-            "description": "permet d'identifier le mode d'entrée des archives",
-            "example": "Versement",
+            "name": "code_postal",
+            "title": "Code postal",
+            "description": "Ce champ contient le code postale rattaché à l'adresse du lieu. Le site national des adresses permet de rechercher une adresse (voie, lieu-dit, commune, code postal) : adresse.data.gouv.fr",
+            "example": "51100",
             "type": "string",
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Versement",
-                    "Don",
-                    "Dépôt",
-                    "Dévolution",
-                    "Achat",
-                    "Legs ou dation",
-                    "Copie",
-                    "Réintégration",
-                    "Protocole",
-                    "Autre"
-                ]
+                "required": true
+            }
+        },
+        {
+            "name": "code_insee",
+            "title": "Code officiel géographique",
+            "description": "Ce champ contient le code officiel géographique de la commune rattachée à l'adresse du lieu.",
+            "example": "51454",
+            "type": "string",
+            "constraints": {
+                "required": false
             }
         },
         {
