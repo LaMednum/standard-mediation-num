@@ -16,7 +16,7 @@
         }
     ],
     "author": "Datactivist et la MedNum pour l'Agence nationale de la cohésion des territoires (ANCT)",
-    "contact": "contact@mednum.fr",
+    "contact": "contact@lamednum.coop",
     "contributors": [
         {
             "organisation": "La MedNum",
@@ -120,7 +120,7 @@
         {
             "name": "code_postal",
             "title": "Code postal",
-            "description": "Ce champ contient le code postale rattaché à l'adresse du lieu. Le site national des adresses permet de rechercher une adresse (voie, lieu-dit, commune, code postal) : adresse.data.gouv.fr",
+            "description": "Ce champ contient le code postal rattaché à l'adresse du lieu. Le site national des adresses permet de rechercher une adresse (voie, lieu-dit, commune, code postal) : adresse.data.gouv.fr",
             "example": "51100",
             "type": "string",
             "constraints": {
@@ -228,7 +228,7 @@
             }
         },
         {
-            "name": "horaire",
+            "name": "horaires",
             "title": "Horaires",
             "description": "Ce champ indique les jours et horaires d'ouverture du lieu, en respectant le format proposé par OpenStreetMap (https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours). L'outil YoHours (https://projets.pavie.info/yohours/) permet de générer des horaires au bon format. Le format OSM permet d'indiquer des exceptions pendant certaines périodes (vacances, jours fériés…). Pour les générer au bon format en utilisant YoHours, il suffit de les renseigner en cliquant sur le bouton 'plus' vert, situé en haut à gauche.",
             "example": "Mo-Fr 09:00-12:00,14:00-18:30; Sa 08:30-12:00",
@@ -351,7 +351,7 @@
                     "Gratuit sous condition : La gratuité est conditionnée à des critères (situation familiale, convention avec un organisme social...)", 
                     "Payant : L'accès au lieu et/ou à ses services est payant",
                     "Adhésion : L'accès au lieu et/ou à ses services nécessite d'y adhérer",
-                    "Accepte le pass numérique : Il est possible d'utiliser un pass numérique pour accéder au lieu"
+                    "Accepte le Pass numérique : Il est possible d'utiliser un Pass numérique pour accéder au lieu"
                 ]
             }
         },
@@ -367,7 +367,7 @@
                     "France Services",
                     "CNFS",
                     "APTIC",
-                    "AIdants Connect",
+                    "Aidants Connect",
                     "Fabriques de Territoire",
                     "Grandes écoles du numérique",
                     "Point relais CAF",
@@ -389,7 +389,7 @@
             }
         },
         {
-            "name": "modalités_accompagnement",
+            "name": "modalites_accompagnement",
             "title": "Modalités d'accompagnement",
             "description": "Ce champ indique les types d'accompagnement proposés par le lieu. Il est possible de renseigner plusieurs valeurs.",
             "example": "Seul,Avec de l'aide",
@@ -407,7 +407,7 @@
         {
             "name": "accessibilite",
             "title": "Accessibilité / accueil handicap",
-            "description": "Ce champ contient une url renvoyant vers le profil Acceslibre du lieu : https://acceslibre.beta.gouv.fr/. Acceslibre est un service public porté par le Ministère de la Transition Écologique afin de collecter et de partager les données d'accessibilité des établissements recevant du public. Le remplissage d'une fiche prend moins de 5 minutes.",
+            "description": "Ce champ contient une url renvoyant vers le profil acceslibre du lieu : https://acceslibre.beta.gouv.fr/. Acceslibre est un service public porté par le Ministère de la Transition Écologique afin de collecter et de partager les données d'accessibilité des établissements recevant du public. Le remplissage d'une fiche prend moins de 5 minutes.",
             "example": "https://acceslibre.beta.gouv.fr/app/29-lampaul-plouarzel/a/bibliotheque-mediatheque/erp/mediatheque-13/",
             "type": "string",
             "constraints": {
