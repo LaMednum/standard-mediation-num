@@ -43,15 +43,15 @@ Les fichiers doivent, sauf exception et autant que possible, respecter les règl
 ### Recommandations pour le nommage des fichiers :
 Les fichiers doivent, sauf exception et autant que possible, respecter les règles de nommage suivantes :
 
-AAAAMMJJ_idProducteur_lieux-de-mediation-numerique_territoire.csv
+YYYY-MM-DD_idProducteur_lieux-de-mediation-numerique_territoire.csv
 
-* AAAAMMJJ : Date de création du fichier
+* YYYY-MM-DD : Date de création du fichier
 * idProducteur :  Numéro SIRET (sur 14 chiffres) ou RNA (W + 9 chiffres) pour identifier le producteur
-* lieux_de_mediation_numerique : nom du fichier, en minuscules non accentuées
+* lieux-de-mediation-numerique : nom du fichier, en minuscules non accentuées
 * territoire : Nom du territoire concerné, non accentué (exemple : BordeauxMetropole)
 * extension : Si les règles de formatage sont respectées, l'extension est .csv
 
-Exemple : 20220725_24330031600011_lieux-mediation-numerique_BordeauxMetropole.csv
+Exemple : 2022-07-25_24330031600011_lieux-de-mediation-numerique_BordeauxMetropole.csv
 
 ### Recommandations pour la mise en conformité :
 Ces conseils reprennent ceux du [Socle commun des données locales publié par Open Data france](https://scdl.opendatafrance.net/docs/recommandations-relatives-aux-jeux-de-donnees.html)
