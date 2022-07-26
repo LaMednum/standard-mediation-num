@@ -32,13 +32,13 @@ Le format de fichier retenu pour la publication des données est le CSV (Comma S
 
 Les fichiers doivent, sauf exception et autant que possible, respecter les règles de formatage suivantes :
 
-*l’encodage des caractères est UTF-8,
-*le séparateur des colonnes est la virgule,
-*le séparateur des nombres décimaux est le point,
-*le séparateur de valeurs multiples dans un champ est le point-virgule,
-*si un champ contient une virgule, il doit être entouré de guillemets doubles,
-*chaque ligne doit avoir le même nombre de champs,
-*le type MIME ou Content-Type est text/csv.
+* l’encodage des caractères est UTF-8,
+* le séparateur des colonnes est la virgule,
+* le séparateur des nombres décimaux est le point,
+* le séparateur de valeurs multiples dans un champ est le point-virgule,
+* si un champ contient une virgule, il doit être entouré de guillemets doubles,
+* chaque ligne doit avoir le même nombre de champs,
+* le type MIME ou Content-Type est text/csv.
 
 ### Recommandations pour le nommage des fichiers :
 Les fichiers doivent, sauf exception et autant que possible, respecter les règles de nommage suivantes :
