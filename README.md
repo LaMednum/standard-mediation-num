@@ -30,5 +30,3 @@ La liste des services proposés par les structures a été limitée à 15 valeur
 Des échanges avec l’équipe d’acceslibre ont fait émerger le besoin, pour les personnes en situation de handicap, d’avoir accès à beaucoup d’informations sur les lieux recevant du public. Un champ “accessibilité PMR” ne suffit pas et conduit nécessairement la personne à téléphoner au lieu pour un complément d’information. 
 Afin de répondre aux besoins des publics concernés, un atelier ouvert a validé le fait d’encourager les lieux à remplir leur profil sur acceslibre et à en mettre le lien dans le schéma de données. 
 Ce remplissage prend quelques minutes et le champ n’est pas obligatoire. 
-
-
