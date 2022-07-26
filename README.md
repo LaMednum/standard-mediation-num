@@ -2,7 +2,7 @@
 Ce schéma permet de modéliser les différents attributs des lieux de médiation numérique. 
 
 ## Contexte
-Il existe un réel besoin d’une vision nationale, complète et actualisée de l’offre de médiation numérique
+Il existe un réel besoin d’une vision nationale, complète et actualisée de l’offre de médiation numérique. 
 
 Des acteurs de la médiation numérique, notamment les hubs, ont produit de nombreuses données de recensement des lieux et des offres de médiation mais souvent, ces productions ne respectent pas le même format, rendant alors impossible une vision formalisée, complète et partagée de l’offre nationale de médiation numérique. 
 
@@ -14,7 +14,7 @@ En lien étroit avec ces travaux, l’ANCT mène actuellement un projet de carto
 
 ## Construction collaborative du schéma de données 
 
-Ce travail est piloté par l’Agence nationale pour la cohésion des territoires (ANCT) et La MedNum avec l’appui de Datactivist. La concertation autour du schéma s'est structurée autour de cercles concentriques : un comité de pilotage propose des arbitrages autour des suggestions de ce groupe ouvert de contributeurs. Près d'une cinquantaine de personnes ont participé à chacun des trois ateliers de travail, et 120+ commentaires ont permis d'aboutir une version finale du schéma de données.
+Ce travail est piloté par l’Agence nationale pour la cohésion des territoires (ANCT) et La MedNum avec l’appui de Datactivist. La concertation autour du schéma s'est structurée autour de cercles concentriques : un comité de pilotage propose des arbitrages autour des suggestions d'un groupe ouvert de contributeurs. Près d'une cinquantaine de personnes ont participé à chacun des trois ateliers de travail, et 120+ commentaires ont permis d'aboutir une version finale du schéma de données.
 
 Tous les comités de pilotage et les ateliers ont fait l'objet de comptes-rendus disponibles [ici](https://github.com/LaMednum/standard-mediation-num/tree/main/COPILAteliers) 
 
@@ -24,7 +24,7 @@ Les étapes et enjeux du projet sont également détaillés [sur le site de La M
 
 La documentation des champs du schéma est accessible ici *insérer lien schema.data.gouv.fr*. 
 
-Un [gabarit](https://github.com/LaMednum/standard-mediation-num/blob/main/Schema_lieux_mediation_numerique_gabarit.xlsx) au format tableur est également prévu pour faciliter la publication d'un jeu de données au format du schéma.
+Un [gabarit](https://github.com/LaMednum/standard-mediation-num/blob/main/Schema_lieux_mediation_numerique_gabarit.xlsx) au format tableur est également prévu pour faciliter la publication d'un jeu de données conforme au format du schéma.
 
 ## Format de fichier
 
@@ -46,7 +46,7 @@ Les fichiers doivent, sauf exception et autant que possible, respecter les règl
 AAAAMMJJ_idProducteur_lieux-de-mediation-numerique_territoire.csv
 
 * AAAAMMJJ : Date de création du fichier
-* idProducteur :  Numéro SIRET ou RNA sur 14 chiffres pour identifier le producteur
+* idProducteur :  Numéro SIRET (sur 14 chiffres) ou RNA (W + 9 chiffres) pour identifier le producteur
 * lieux_de_mediation_numerique : nom du fichier, en minuscules non accentuées
 * territoire : Nom du territoire concerné, non accentué (exemple : BordeauxMetropole)
 * extension : Si les règles de formatage sont respectées, l'extension est .csv
@@ -54,11 +54,11 @@ AAAAMMJJ_idProducteur_lieux-de-mediation-numerique_territoire.csv
 Exemple : 20220725_24330031600011_lieux-mediation-numerique_BordeauxMetropole.csv
 
 ### Recommandations pour la mise en conformité :
-Ces conseils reprennent ceux du [Schéma des données locales publié par Open Data france](https://scdl.opendatafrance.net/docs/recommandations-relatives-aux-jeux-de-donnees.html)
+Ces conseils reprennent ceux du [Socle commun des données locales publié par Open Data france](https://scdl.opendatafrance.net/docs/recommandations-relatives-aux-jeux-de-donnees.html)
 
 Les fichiers doivent comporter :
 * Toutes les colonnes, y compris celles dont les cellules ne sont pas renseignées, dans le bon ordre, et avec des en-têtes correctement nommées sur la première ligne (nom correspondant strictement au schéma)
 * Autant de lignes que nécessaire comprenant des cellules dont les valeurs peuvent être obligatoires (elles doivent être impérativement renseignées) ou optionnelles (elles sont seulement recommandées ou soumises à condition de disponibilité / pertinence)
 * Traitement des cellules vides (absence de valeur ou valeur équivalente à 0) : ces cellules doivent être laissées vides. Dans le cas où une valeur numérique est égale à zéro elle doit être écrite 0.0 (zéro [point] zéro), et, dans le cas où des caractères spéciaux sont utilisés pour remplacer des valeurs manquantes (ex. "-" ou "NaN"), cela doit être mentionné dans les métadonnées.
-* Les dates doivent être formées selon la norme 8601 : YYYY-MM-DD.
+* Les dates doivent être formées selon la norme ISO 8601 : YYYY-MM-DD.
 
