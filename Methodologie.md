@@ -10,7 +10,7 @@ En lien étroit avec ces travaux, l’ANCT mène actuellement un projet de carto
 * Pouvoir prendre rdv en direct pour la personne accompagnée auprès d'une structure de médiation numérique
 * Améliorer le pilotage de l’action publique du territoire en matière de médiation numérique en rendant lisible l’offre de médiation numérique
 
-Nous pourrons nous appuyer sur le schéma développé par AidantsConnect, aujourd’hui peu utilisé, pour construire ensemble un schéma plus simple et ancré dans les usages des acteurs de la médiation numérique. Ce travail est piloté par l’Agence nationale pour la cohésion des territoires (ANCT), La MedNum avec l’appui de Datactivist. La concertation autour du standard se structurera autour de cercles concentriques : un comité de pilotage proposera des arbitrages autour des suggestions d’un groupe ouvert de contributeurs. 
+Nous nous sommes appuyés sur le schéma développé par AidantsConnect, aujourd’hui peu utilisé, pour construire ensemble un schéma plus simple et ancré dans les usages des acteurs de la médiation numérique. Ce travail est piloté par l’Agence nationale pour la cohésion des territoires (ANCT), La MedNum avec l’appui de Datactivist. La concertation autour du standard se structurera autour de cercles concentriques : un comité de pilotage proposera des arbitrages autour des suggestions d’un groupe ouvert de contributeurs. 
 
 ### Réunions
 
@@ -49,7 +49,7 @@ de l'action sociale de la collectivité](https://github.com/LaMednum/standard-me
 
 #### Comité de pilotage du 29 juin 2022
 * [Compte-rendu du COPIL](https://github.com/LaMednum/standard-mediation-num/blob/main/COPILAteliers/Compte%20rendu%20COPIL%20Validation%20standard%20(1).pdf)
-* [Support de présentation]((https://github.com/LaMednum/standard-mediation-num/blob/main/COPILAteliers/Copil%234%20-%20arbitrage%20suite%20a%CC%80%20l'AAC.pptx%20(1).pdf)
+* [Support de présentation](https://github.com/LaMednum/standard-mediation-num/blob/main/COPILAteliers/Copil%234%20-%20arbitrage%20suite%20a%CC%80%20l'AAC.pptx%20(1).pdf)
 
 #### Présentation publique du schéma le 30 juin 2022
 * [Support de présentation](https://github.com/LaMednum/standard-mediation-num/blob/main/COPILAteliers/20220630-Pr%C3%A9sentation%20du%20sch%C3%A9ma.pptx.pdf)
