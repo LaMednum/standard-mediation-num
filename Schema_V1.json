@@ -340,7 +340,7 @@
             }
         },
         {
-            "name": "conditions_access",
+            "name": "conditions_acces",
             "title": "Conditions d'accès",
             "description": "Ce champ indique les conditions financières d'accès au lieu.",
             "example": "Payant,Gratuit",
