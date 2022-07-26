@@ -18,7 +18,7 @@ Ce travail est piloté par l’Agence nationale pour la cohésion des territoire
 
 Tous les comités de pilotage et les ateliers ont fait l'objet de comptes-rendus disponibles [ici](https://github.com/LaMednum/standard-mediation-num/tree/main/COPILAteliers) 
 
-Les étapes et enjeux du projet sont également détaillés [sur le site de La Mednum](https://github.com/LaMednum/standard-mediation-num/tree/main/COPILAteliers)
+Les étapes et enjeux du projet sont également détaillés [sur le site de La Mednum](https://lamednum.coop/schema-de-donnees-des-lieux-de-mediation-numerique-2)
 
 ## Description du schéma
 
