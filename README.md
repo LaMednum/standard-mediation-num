@@ -10,7 +10,7 @@ Des acteurs de la médiation numérique, notamment les hubs, ont produit de nomb
 
 La standardisation permet de décrire l'offre de médiation numérique de manière harmonisée. Elle repose sur un travail de concertation dans lequel des utilisateurs représentatifs ont défini un schéma de données qui décrit le format des fichiers, les différents champs, les valeurs possibles…
 
-### Un travail qui vise à construire une cartographie nationale et une multitude d’usages
+### Un travail qui contribue à la construction d'une cartographie nationale et d'une multitude d’usages
 
 En lien étroit avec ces travaux, l’ANCT mène actuellement un projet de cartographie nationale de l’offre de médiation numérique. Les données seront ouvertes pour développer une multitude d’usages : guider les usagers vers une structure de médiation numérique, accompagner les acteurs territoriaux dans le développement de l’offre, analyser l’adéquation entre l’offre et le besoin pour les publics fragiles…
 
