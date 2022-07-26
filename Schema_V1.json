@@ -80,11 +80,12 @@
         {
             "name": "id",
             "title": "Identifiant unique local du lieu",
-            "description": "Ce champ contient un identifiant unique local. Le producteur de donnée le génère librement selon sa méthode. Il peut par exemple s'agir d'une suite de lettres et/ou de chiffres, ou d'un UUID (universal unique identifier) produit aléatoirement : https://www.uuidgenerator.net/ Ce champ permet d'éviter localement les doublons, par exemple dans le cas où deux lieux auraient le même SIRET. Il est un pré-requis pour assurer la compatibilité avec le référentiel national sur l'offre d'insertion : https://www.data.inclusion.beta.gouv.fr/",
+            "description": "Ce champ contient un identifiant unique local. Le producteur de données le génère librement selon sa méthode. Il peut par exemple s'agir d'une suite de lettres et/ou de chiffres, ou d'un UUID (universal unique identifier) produit aléatoirement : https://www.uuidgenerator.net/ Ce champ permet d'éviter localement les doublons, par exemple dans le cas où deux lieux auraient le même SIRET. Il est un pré-requis pour assurer la compatibilité avec le référentiel national sur l'offre d'insertion : https://www.data.inclusion.beta.gouv.fr/",
             "example": "structure-1",
             "type": "string",
             "constraints": {
-                "required": true
+                "required": true,
+                "unique": true
             }
         },
         {
