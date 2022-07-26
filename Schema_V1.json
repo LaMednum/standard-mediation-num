@@ -75,7 +75,7 @@
     "created": "2022-07-04",
     "updated": "2022-07-04",
     "homepage": "https://github.com/LaMednum/standard-mediation-num",
-    "uri": "https://raw.githubusercontent.com/Archivistes75/registre_entrees/raw/v0.2.0/schema.json",
+    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/main/Schema_V1.json,
     "fields": [
         {
             "name": "id",
