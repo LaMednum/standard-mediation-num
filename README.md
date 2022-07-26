@@ -20,7 +20,7 @@ Tous les comités de pilotage et les ateliers ont fait l'objet de comptes-rendus
 
 Les étapes et enjeux du projet sont également détaillés [sur le site de La Mednum](https://github.com/LaMednum/standard-mediation-num/tree/main/COPILAteliers)
 
-### Description du schéma
+## Description du schéma
 
 La documentation des champs du schéma est accessible ici *insérer lien schema.data.gouv.fr*. 
 
