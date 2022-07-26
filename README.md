@@ -1,5 +1,5 @@
-# Dépôt du schéma de données des lieux de médiation numérique
-
+# Schéma de données des lieux de médiation numérique
+Ce schéma permet de modéliser les différents attributs des lieux de médiation numérique. 
 
 ## Contexte
 Il existe un réel besoin d’une vision nationale, complète et actualisée de l’offre de médiation numérique
@@ -30,3 +30,46 @@ La liste des services proposés par les structures a été limitée à 15 valeur
 Des échanges avec l’équipe d’acceslibre ont fait émerger le besoin, pour les personnes en situation de handicap, d’avoir accès à beaucoup d’informations sur les lieux recevant du public. Un champ “accessibilité PMR” ne suffit pas et conduit nécessairement la personne à téléphoner au lieu pour un complément d’information. 
 Afin de répondre aux besoins des publics concernés, un atelier ouvert a validé le fait d’encourager les lieux à remplir leur profil sur acceslibre et à en mettre le lien dans le schéma de données. 
 Ce remplissage prend quelques minutes et le champ n’est pas obligatoire. 
+
+##Description du schéma
+
+La documentation des champs du schéma est accessible ici *insérer lien schema.data.gouv.fr*. 
+
+Un [gabarit](https://github.com/LaMednum/standard-mediation-num/blob/main/Schema_lieux_mediation_numerique_gabarit.xlsx) au format tableur est également prévu pour faciliter la publication d'un jeu de données au format du schéma.
+
+##Format de fichier
+
+Le format de fichier retenu pour la publication des données est le CSV (Comma Separated Values, valeurs séparées par des virgules).
+
+Les fichiers doivent, sauf exception et autant que possible, respecter les règles de formatage suivantes :
+
+*l’encodage des caractères est UTF-8,
+*le séparateur des colonnes est la virgule,
+*le séparateur des nombres décimaux est le point,
+*le séparateur de valeurs multiples dans un champ est le point-virgule,
+*si un champ contient une virgule, il doit être entouré de guillemets doubles,
+*chaque ligne doit avoir le même nombre de champs,
+*le type MIME ou Content-Type est text/csv.
+
+###Recommandations pour le nommage des fichiers :
+Les fichiers doivent, sauf exception et autant que possible, respecter les règles de nommage suivantes :
+
+AAAAMMJJ_idProducteur_lieux-de-mediation-numerique_territoire.csv
+
+*AAAAMMJJ : Date de création du fichier
+*idProducteur :  Numéro SIRET ou RNA sur 14 chiffres pour identifier le producteur
+*lieux_de_mediation_numerique : nom du fichier, en minuscules non accentuées
+*territoire : Nom du territoire concerné, non accentué (exemple : RegionSud)
+*extension : Si les règles de formatage sont respectées, l'extension est .csv
+
+Exemple : 20220725_123456789_lieux-médiation-numérique_Bordeaux.csv
+
+###Recommandations pour la mise en conformité :
+Ces conseils reprennent ceux du [Schéma des données locales publié par Open Data france](https://scdl.opendatafrance.net/docs/recommandations-relatives-aux-jeux-de-donnees.html)
+
+Les fichiers doivent comporter :
+*Toutes les colonnes, y compris celles dont les cellules ne sont pas renseignées, dans le bon ordre, et avec des en-têtes correctement nommées sur la première ligne (nom correspondant strictement au schéma)
+*Autant de lignes que nécessaire comprenant des cellules dont les valeurs peuvent être obligatoires (elles doivent être impérativement renseignées) ou optionnelles (elles sont seulement recommandées ou soumises à condition de disponibilité / pertinence)
+*Traitement des cellules vides (absence de valeur ou valeur équivalente à 0) : ces cellules doivent être laissées vides. Dans le cas où une valeur numérique est égale à zéro elle doit être écrite 0.0 (zéro [point] zéro), et, dans le cas où des caractères spéciaux sont utilisés pour remplacer des valeurs manquantes (ex. "-" ou "NaN"), cela doit être mentionné dans les métadonnées.
+*Les dates doivent être formées selon la norme 8601 : YYYY-MM-DD.
+
