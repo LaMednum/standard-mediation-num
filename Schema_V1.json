@@ -290,7 +290,7 @@
             "type": "date",
             "format": "default",
             "constraints": {
-                "required": false
+                "required": true
             }
         },
         {
