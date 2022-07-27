@@ -218,8 +218,7 @@
             "example": "contact@laquincaillerie.tl",
             "type": "string",
             "constraints": {
-                "required": false,
-                "pattern": "^.+@[^\.].*\.[a-z]{2,}$"
+                "required": false
             }
         },
         {
