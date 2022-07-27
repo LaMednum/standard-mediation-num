@@ -125,7 +125,8 @@
             "example": "51100",
             "type": "string",
             "constraints": {
-                "required": true
+                "required": true,
+                "pattern":"^\\d{5}$"
             }
         },
         {
@@ -135,7 +136,8 @@
             "example": "51454",
             "type": "string",
             "constraints": {
-                "required": false
+                "required": false,
+                "pattern":"^([013-9]\\d|2[AB1-9])\\d{3}$"
             }
         },
         {
@@ -205,7 +207,8 @@
             "example": "+33180059880",
             "type": "string",
             "constraints": {
-                "required": false
+                "required": false,
+                "pattern": "^(\\+33|\\+590|\\+594|\\+262|\\+596|\\+269|\\+687|\\+689|\\+590|\\+508|\\+681)(\\d){6,9}$"
             }
         },
         {
@@ -215,7 +218,8 @@
             "example": "contact@laquincaillerie.tl",
             "type": "string",
             "constraints": {
-                "required": false
+                "required": false,
+                "pattern": "^.+@[^\.].*\.[a-z]{2,}$"
             }
         },
         {
@@ -344,7 +348,7 @@
             "name": "conditions_acces",
             "title": "Conditions d'accès",
             "description": "Ce champ indique les conditions financières d'accès au lieu.",
-            "example": "Gratuit : Je peux accéder gratuitement au lieu et à ses services",
+            "example": "Payant : L'accès au lieu et/ou à ses services est payant;Accepte le Pass numérique : Il est possible d'utiliser un Pass numérique pour accéder au lieu",
             "type": "string",
             "constraints": {
                 "required": false,
