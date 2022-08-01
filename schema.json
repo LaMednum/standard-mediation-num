@@ -15,6 +15,18 @@
             "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
         }
     ],
+    "resources":[
+       {
+          "title":"Fichier valide (CSV)",
+          "name":"exemple-valide-csv",
+          "path":"https://raw.githubusercontent.com/LaMednum/standard-mediation-num/main/Exemple-valide.csv"
+       },
+       {
+         "title":"Ressource valide (XLSX)",
+         "name":"exemple-valide-xlsx",
+         "path":"https://raw.githubusercontent.com/LaMednum/standard-mediation-num/main/Exemple-valide.xlsx"
+       }
+    ],
     "author": "Datactivist et la MedNum pour l'Agence nationale de la cohésion des territoires (ANCT)",
     "contact": "contact@lamednum.coop",
     "contributors": [
@@ -256,7 +268,7 @@
             "name": "presentation_detail",
             "title": "Présentation détaillée",
             "description": "Ce champ contient une description plus détaillée du lieu. Il est par exemple possible de préciser si des aidants sont itinérants.",
-            "example": "56",
+            "example": "Notre parcours d'initiation permet l'acquisition de compétences numériques de base. Nous proposons également un accompagnement à destination des personnes déjà initiées qui souhaiteraient approfondir leurs connaissances. Du matériel informatique est en libre accès pour nos adhérents tous les après-midis. En plus de d'accueillir les personnes dans notre lieu en semaine (sur rendez-vous), nous assurons une permanence le samedi matin dans la médiathèque XX.",
             "type": "string",
             "constraints": {
                 "required": false
