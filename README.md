@@ -59,4 +59,3 @@ Ces conseils reprennent ceux du [Socle commun des données locales publié par O
 Les fichiers doivent comporter :
 * Toutes les colonnes, y compris celles dont les cellules ne sont pas renseignées, dans le bon ordre, et avec des en-têtes correctement nommées sur la première ligne (nom correspondant strictement au schéma)
 * Autant de lignes que nécessaire comprenant des cellules dont les valeurs peuvent être obligatoires (elles doivent être impérativement renseignées) ou optionnelles (elles sont seulement recommandées ou soumises à condition de disponibilité / pertinence)
-* Les dates doivent être formées selon la norme ISO 8601 : YYYY-MM-DD.
