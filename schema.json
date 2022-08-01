@@ -19,12 +19,7 @@
        {
           "title":"Fichier valide (CSV)",
           "name":"exemple-valide-csv",
-          "path":"https://raw.githubusercontent.com/LaMednum/standard-mediation-num/main/Exemple-valide.csv"
-       },
-       {
-         "title":"Ressource valide (XLSX)",
-         "name":"exemple-valide-xlsx",
-         "path":"https://raw.githubusercontent.com/LaMednum/standard-mediation-num/main/Exemple-valide.xlsx"
+          "path":"https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v0.1.0/exemple-valide.csv"
        }
     ],
     "author": "Datactivist et la MedNum pour l'Agence nationale de la cohésion des territoires (ANCT)",
@@ -81,13 +76,17 @@
         {
             "organisation": "Startup d'État Conseiller numérique, projet cartographie nationale",
             "role": "contributor"
+        },
+        {
+            "organisation": "Etalab",
+            "role": "contributor"
         }
     ],
     "version": "0.1.0",
     "created": "2022-07-04",
     "updated": "2022-08-01",
     "homepage": "https://github.com/LaMednum/standard-mediation-num",
-    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/main/Schema.json",
+    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v0.1.0/schema.json",
     "fields": [
         {
             "name": "id",
