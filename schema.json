@@ -340,12 +340,12 @@
         {
             "name": "labels_nationaux",
             "title": "Labels nationaux",
-            "description": "Ce champ indique si le lieu a obtenu un ou plusieurs labels nationaux. Sélectionner une ou plusieurs valeurs séparées par un point-virgule sans espace parmi la liste suivante : France Services ; CNFS ; APTIC ; Aidants Connect ; Fabriques de Territoire ; Grandes écoles du numérique ; Point relais CAF ; Relais pôle emploi ; French Tech ; Campus connecté",
+            "description": "Ce champ indique si le lieu a obtenu un ou plusieurs labels nationaux. Sélectionner une ou plusieurs valeurs séparées par un point-virgule sans espace parmi la liste suivante : France Services ; CNFS ; APTIC ; Aidants Connect ; Fabriques de Territoire ; Grandes écoles du numérique ; Point relais CAF ; Point numérique CAF ; Relais pôle emploi ; French Tech ; Campus connecté",
             "example": "France Services;APTIC;Point relais CAF",
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|;)(France Services|CNFS|APTIC|Aidants Connect|Fabriques de Territoire|Grandes écoles du numérique|Point relais CAF|Relais pôle emploi|French Tech|Campus connecté))+$"
+                "pattern": "(?:(?:^|;)(France Services|CNFS|APTIC|Aidants Connect|Fabriques de Territoire|Grandes écoles du numérique|Point relais CAF|Point numérique CAF|Relais pôle emploi|French Tech|Campus connecté))+$"
             }
         },
         {
