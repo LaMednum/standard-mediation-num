@@ -19,7 +19,7 @@
        {
           "title":"Fichier valide (CSV)",
           "name":"exemple-valide-csv",
-          "path":"https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v0.1.0/exemple-valide.csv"
+          "path":"https://raw.githubusercontent.com/LaMednum/standard-mediation-num/main/exemple-valide.csv"
        }
     ],
     "author": "Datactivist et la MedNum pour l'Agence nationale de la cohésion des territoires (ANCT)",
