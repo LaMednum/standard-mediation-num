@@ -253,7 +253,7 @@
             }
         },
         {
-            "name": "presentation_resume",
+            "name": "presentation_resumee",
             "title": "Présentation résumé",
             "description": "Ce champ contient une courte description du lieu (500 caractères maximum).",
             "example": "Notre association propose des formations aux outils numériques à destination des personnes âgées.",
@@ -327,7 +327,7 @@
             }
         },
         {
-            "name": "conditions_acces",
+            "name": "conditions_access",
             "title": "Conditions d'accès",
             "description": "Ce champ indique les conditions financières d'accès au lieu. Sélectionner une ou plusieurs valeurs séparées par un point-virgule sans espace parmi la liste suivante : Gratuit : Je peux accéder gratuitement au lieu et à ses services ; Gratuit sous condition : La gratuité est conditionnée à des critères (situation familiale, convention avec un organisme social...) ; Payant : L'accès au lieu et\/ou à ses services est payant ; Adhésion : L'accès au lieu et\/ou à ses services nécessite d'y adhérer ; Accepte le Pass numérique : Il est possible d'utiliser un Pass numérique pour accéder au lieu",
             "example": "Gratuit sous condition : La gratuité est conditionnée à des critères (situation familiale, convention avec un organisme social...);Payant : L'accès au lieu et/ou à ses services est payant;Accepte le Pass numérique : Il est possible d'utiliser un Pass numérique pour accéder au lieu",
