@@ -235,7 +235,7 @@
         {
             "name": "site_web",
             "title": "Site web",
-            "description": "Ce champ contient une ou plusieurs URL vers le site internet du lieu et/ou les réseaux sociaux. Pour renseigner plusieurs URL, il est nécessaire de les séparer par une virgule, sans espace.",
+            "description": "Ce champ contient une ou plusieurs URL vers le site internet du lieu et/ou les réseaux sociaux. Pour renseigner plusieurs URL, il est nécessaire de les séparer par un point-virgule.",
             "example": "https://www.laquincaillerie.tl/;https://m.facebook.com/laquincaillerienumerique/",
             "type": "string",
             "constraints": {
