@@ -1,5 +1,5 @@
 # Schéma de données des lieux de médiation numérique
-Ce schéma permet de modéliser les différents attributs des lieux de médiation numérique. 
+Ce schéma permet de modéliser les différents attributs des lieux de médiation et d'inclusion numérique. 
 
 ## Contexte
 Il existe un réel besoin d’une vision nationale, complète et actualisée de l’offre de médiation numérique. 
