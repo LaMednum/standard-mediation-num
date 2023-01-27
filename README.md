@@ -16,7 +16,7 @@ En lien étroit avec ces travaux, l’ANCT mène actuellement un projet de carto
 
 Ce travail est piloté par l’Agence nationale pour la cohésion des territoires (ANCT) et La MedNum avec l’appui de Datactivist. La concertation autour du schéma s'est structurée autour de cercles concentriques : un comité de pilotage propose des arbitrages autour des suggestions d'un groupe ouvert de contributeurs. Près d'une cinquantaine de personnes ont participé à chacun des trois ateliers de travail, et 120+ commentaires ont permis d'aboutir une version finale du schéma de données.
 
-Tous les comités de pilotage et les ateliers ont fait l'objet de comptes-rendus disponibles [ici](https://github.com/LaMednum/standard-mediation-num/tree/main/COPILAteliers) 
+Tous les comités de pilotage et les ateliers ont fait l'objet de comptes-rendus disponibles [ici](https://github.com/LaMednum/standard-mediation-num/blob/main/COPILAteliers/ListeR%C3%A9unions.md) 
 
 Les étapes et enjeux du projet sont également détaillés [sur le site de La Mednum](https://lamednum.coop/schema-de-donnees-des-lieux-de-mediation-numerique-2)
 
