@@ -276,7 +276,7 @@
         {
             "name": "itinerance",
             "title": "Itinérance",
-            "description": "Ce champ permet d'informer si c'est un lieu de médiation itinérant comme un bus numérique, une cyber-caravane ou un camion connecté. Sélectionner une ou plusieurs valeurs séparées par un point-virgule sans espace parmi la liste suivante : "Itinérant;Fixe",
+            "description": "Ce champ permet d'informer si c'est un lieu de médiation itinérant comme un bus numérique, une cyber-caravane ou un camion connecté. Sélectionner une ou plusieurs valeurs séparées par un point-virgule sans espace parmi la liste suivante : 'Itinérant;Fixe'",
             "example": "Itinérant",
             "type": "string",
             "constraints": {
