@@ -215,7 +215,7 @@
         {
             "name": "courriels",
             "title": "Courriel(s)",
-            "description": "Ce champ contient l'adresse email générique de contact du lieu. Si besoin, vous pouvez renseigner plusieurs courriels en les sépérant par un ";".",
+            "description": "Ce champ contient l'adresse email générique de contact du lieu. Si besoin, vous pouvez renseigner plusieurs courriels en les sépérant par un ';'.",
             "example": "contact@laquincaillerie.tl;responsable@laquincaillerie.tl",
             "type": "string",
             "constraints": {
