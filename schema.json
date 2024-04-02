@@ -358,7 +358,7 @@
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|;)(Aidants Connect|Bibliothèques numérique de référence|Certification PIX|Conseillers numériques|Emmaüs Connect|France Services|Grande école du numérique |La Croix Rouge|Point d'accès numérique CAF|Promeneurs du net |Relais numérique (Emmaüs Connect)))+$"
+                "pattern": "(?:(?:^|;)(Aidants Connect|Bibliothèques numérique de référence|Certification PIX|Conseillers numériques|Emmaüs Connect|France Services|Grande école du numérique |La Croix Rouge|Point d'accès numérique CAF|Promeneurs du net |Relais numérique \\(Emmaüs Connect\\)))+$"
             }
         },
         {
