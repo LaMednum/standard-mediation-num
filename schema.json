@@ -401,7 +401,7 @@
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|;)(En autonomie|Accompagnement individuel|Dans un atelier collectif \\(j'apprends collectivement à utiliser le numérique\\)|À distance \\(par téléphone ou en visioconférence\\)))+$"
+                "pattern": "(?:(?:^|;)(En autonomie|Accompagnement individuel|Dans un atelier collectif|À distance))+$"
             }
         },
         {
