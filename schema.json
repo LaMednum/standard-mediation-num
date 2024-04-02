@@ -369,7 +369,7 @@
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|;)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » (illetrisme)|Arnia/MedNum BFC (Bourgogne-Franche-Comté)|Collectif ressources et acteurs réemploi (Normandie)|Fabriques de Territoire|Les Éclaireurs du numérique (Drôme)|Mes Papiers (Métropole de Lyon) |ORDI 3.0|SUD LABS (PACA)))+$"
+                "pattern": "(?:(?:^|;)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illetrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\) |ORDI 3.0|SUD LABS \\(PACA\\)))+$"
             }
         },
         {
