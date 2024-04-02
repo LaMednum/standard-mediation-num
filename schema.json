@@ -364,7 +364,7 @@
         {
             "name": "formations_labels",
             "title": "Formations et labels",
-            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ "Autres formations ou labels". Sélectionner une ou plusieurs valeurs séparées par un point-virgule sans espace parmi la liste suivante :Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illetrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA),
+            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ 'Autres formations ou labels'. Sélectionner une ou plusieurs valeurs séparées par un point-virgule sans espace parmi la liste suivante : Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illetrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA)",
             "example": "Formé à « Mon Espace Santé »;Arnia/MedNum BFC (Bourgogne-Franche-Comté)",
             "type": "string",
             "constraints": {
