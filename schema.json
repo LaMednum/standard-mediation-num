@@ -375,7 +375,7 @@
         {
             "name": "autres_formations_labels",
             "title": "Autres formations et labels",
-            "description": "Ce champ permet de préciser si le lieu a obtenu d’autres formations ou labels non proposés dans le champ "Formations et labels".",
+            "description": "Ce champ permet de préciser si le lieu a obtenu d’autres formations ou labels non proposés dans le champ 'Formations et labels'.",
             "example": "Label et la bête",
             "type": "string",
             "constraints": {
