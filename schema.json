@@ -336,7 +336,7 @@
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|;)(Surdité|Handicaps moteurs|Handicaps mentaux|Illettrisme|Langues étrangères (anglais)|Langues étrangères (autres) sont tous des formes de déficience visuelle))+$"
+                "pattern": "(?:(?:^|;)(Surdité|Handicaps moteurs|Handicaps mentaux|Illettrisme|Langues étrangères \\(anglais\\)|Langues étrangères \\(autres\\)|Déficience visuelle))+$"
             }
         },
         {
