@@ -216,7 +216,7 @@
         {
             "name": "courriels",
             "title": "Courriel(s)",
-            "description": "Ce champ contient l'adresse email générique de contact du lieu. Si besoin, vous pouvez renseigner plusieurs courriels en les sépérant par un ';'.",
+            "description": "Ce champ contient l'adresse email générique de contact du lieu. Si besoin, vous pouvez renseigner plusieurs courriels en les sépérant par un point-virgule.",
             "example": "contact@laquincaillerie.tl;responsable@laquincaillerie.tl",
             "type": "string",
             "constraints": {
@@ -226,7 +226,7 @@
         {
             "name": "site_web",
             "title": "Site web",
-            "description": "Ce champ contient une ou plusieurs URL vers le site internet du lieu et/ou les réseaux sociaux. Pour renseigner plusieurs URL, il est nécessaire de les séparer par une barre verticale |.",
+            "description": "Ce champ contient une ou plusieurs URL vers le site internet du lieu et/ou les réseaux sociaux. Pour renseigner plusieurs URL, il est nécessaire de les séparer par un point-virgule.",
             "example": "https://www.laquincaillerie.tl/;https://m.facebook.com/laquincaillerienumerique/",
             "type": "string",
             "constraints": {
@@ -275,18 +275,14 @@
             }
         },
         {
-            "name": "itinerance",
+           "name": "itinerance",
             "title": "Itinérance",
-            "description": "Ce champ permet d'informer si c'est un lieu de médiation itinérant comme un bus numérique, une cyber-caravane ou un camion connecté. Sélectionner une ou plusieurs valeurs séparées par un  |  parmi la liste suivante : 'Itinérant|Fixe'",
+            "description": "Ce champ permet d'informer si c'est un lieu de médiation itinérant comme un bus numérique, une cyber-caravane ou un camion connecté. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante : 'Itinérant;Fixe'",
             "example": "Itinérant",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": [
-                    "Itinérant",
-                    "Fixe"
-                        ]
-
+                "pattern": "(?:(?:^|;)(Itinérant|Fixe))+$"
                             }
         },
         {
@@ -313,105 +309,67 @@
         {
             "name": "services",
             "title": "Services",
-            "description": "Ce champ permet de décrire les types d'accompagnement proposés dans l'offre du lieu. Sélectionner une ou plusieurs valeurs séparées par un |  parmi la liste suivante :  Aide aux démarches administratives|Maîtrise des outils numériques du quotidien|Insertion professionnelle via le numérique|Utilisation sécurisée du numérique|Parentalité et éducation avec le numérique|Loisirs et créations numériques|Compréhension du monde numérique|Accès internet et matériel informatique|Acquisition de matériel informatique à prix solidaire",
-            "example": "Maîtrise des outils numériques du quotidien;Insertion professionnelle via le numérique;Loisirs et créations numériques",
+            "description": "Ce champ permet de décrire les types d'accompagnement proposés dans l'offre du lieu. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante :  Aide aux démarches administratives;Maîtrise des outils numériques du quotidien;Insertion professionnelle via le numérique;Utilisation sécurisée du numérique;Parentalité et éducation avec le numérique;Loisirs et créations numériques;Comprehension du monde numérique;Accès internet et matériel informatique;Acquisition de matériel informatique à prix solidaire.",            "example": "Maîtrise des outils numériques du quotidien;Insertion professionnelle via le numérique;Loisirs et créations numériques",
             "type": "string",
             "constraints": {
                 "required": true,
-                "enum": ["Aide aux démarches administratives",
-                    "Maîtrise des outils numériques du quotidien",
-                    "Insertion professionnelle via le numérique",
-                    "Utilisation sécurisée du numérique",
-                    "Parentalité et éducation avec le numérique",
-                    "Loisirs et créations numériques",
-                    "Compréhension du monde numérique",
-                    "Accès internet et matériel informatique",
-                    "Acquisition de matériel informatique à prix solidaire"]           
+                 "pattern": "(?:(?:^|;)(Aide aux démarches administratives|Maîtrise des outils numériques du quotidien|Insertion professionnelle via le numérique|Utilisation sécurisée du numérique|Parentalité et éducation avec le numérique|Loisirs et créations numériques|Compréhension du monde numérique|Accès internet et matériel informatique|Acquisition de matériel informatique à prix solidaire))+$"          
             }
         },
         {
             "name": "publics_specifiquement_adresses",
             "title": "Publics spécifiquement adressés",
-            "description": "Par défaut, un lieu d'inclusion numérique est inclusif et peut accueillir tout public. Malgré tout, certains lieux sont habilités à recevoir exclusivement certains publics précis ! Ce champ permet de spécifier si l'action du lieu est tournée vers un public spéficiquement adressé. Sélectionner une ou plusieurs valeurs séparées par un | sans espace parmi la liste suivante : Jeunes;Étudiants;Familles et/ou enfants;Seniors;Femmes",
+            "description": "Par défaut, un lieu d'inclusion numérique est inclusif et peut accueillir tout public. Malgré tout, certains lieux sont habilités à recevoir exclusivement certains publics précis ! Ce champ permet de spécifier si l'action du lieu est tournée vers un public spéficiquement adressé. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante : Jeunes;Étudiants;Familles et/ou enfants;Seniors;Femmes",
             "example": "Jeunes;Femmes",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": ["Jeunes", 
-                    "Étudiants",
-                    "Familles et/ou enfants",
-                    "Seniors",
-                    "Femmes"]    
+                "pattern": "(?:(?:^|;)(Jeunes|Étudiants|Familles et/ou enfants|Seniors|Femmes))+$"
+
                             }
         },
           {
-            "name": "prise_en_charge_specifique",
+             "name": "prise_en_charge_specifique",
             "title": "Prise en charge spécifique",
-            "description": "Ce champ permet d'informer si le lieu est en mesure d'accompagner et soutenir des publics ayant des besoins particuliers. Sélectionner une ou plusieurs valeurs séparées par un | sans espace parmi la liste suivante :Surdité;Handicaps moteurs;Handicaps mentaux;Illettrisme;Langues étrangères (anglais);Langues étrangères (autres) sont tous des formes de déficience visuelle.",
+            "description": "Ce champ permet d'informer si le lieu est en mesure d'accompagner et soutenir des publics ayant des besoins particuliers. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante :Surdité;Handicaps moteurs;Handicaps mentaux;Illettrisme;Langues étrangères (anglais);Langues étrangères (autres) sont tous des formes de déficience visuelle.",
             "example": "Surdité;Illetrisme",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": ["Surdité",
-                    "Handicaps moteurs",
-                    "Handicaps mentaux",
-                    "Illettrisme",
-                    "Langues étrangères (anglais)", 
-                    "Langues étrangères (autres)",
-                    "Déficience visuelle"]           
+                 "pattern": "(?:(?:^|;)(Surdité|Handicaps moteurs|Handicaps mentaux|Illettrisme|Langues étrangères \\(anglais\\)|Langues étrangères \\(autres\\)|Déficience visuelle))+$"
                             }
         },
         {
-            "name": "frais_a_charge",
+           "name": "frais_a_charge",
             "title": "Frais à charge",
-            "description": "Ce champ indique les conditions financières d'accès au lieu. Sélectionner une ou plusieurs valeurs séparées par un | parmi la liste suivante : Gratuit : Je peux accéder gratuitement au lieu et à ses services;Gratuit sous condition : La gratuité est conditionnée à des critères (adhésion, situation familiale, convention avec un organisme social, pass numériques…);Payant : L’accès au lieu et/ou à ses services est payant",
+            "description": "Ce champ indique les conditions financières d'accès au lieu. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante : Gratuit : Je peux accéder gratuitement au lieu et à ses services;Gratuit sous condition : La gratuité est conditionnée à des critères (adhésion, situation familiale, convention avec un organisme social, pass numériques…);Payant : L’accès au lieu et/ou à ses services est payant",
             "example": "Gratuit : Je peux accéder gratuitement au lieu et à ses services",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": ["Gratuit", 
-                    "Gratuit sous condition",
-                    "Payant"]            
+                "pattern": "(?:(?:^|;)(Gratuit : Je peux accéder gratuitement au lieu et à ses services|Gratuit sous condition : La gratuité est conditionnée à des critères (adhésion, situation familiale, convention avec un organisme social, pass numériques…)|Payant : L’accès au lieu et/ou à ses services est payant))+$"       
                             }
         },
          {
-            "name": "dispositif_programmes_nationaux",
+           "name": "dispositif_programmes_nationaux",
             "title": "Dispositifs et programmes nationaux",
-            "description": "Ce champ indique si le lieu appartient à un dispositif ou à un programme national. Sélectionner une ou plusieurs valeurs séparées par un | sans espace parmi la liste suivante : Aidants Connect;Bibliothèques numérique de référence;Certification PIX; Conseillers numériques;Emmaüs Connect;France Services;Grande école du numérique;La Croix Rouge;Point d'accès numérique CAF;Promeneurs du net;Relais numérique (Emmaüs Connect)",
+            "description": "Ce champ indique si le lieu appartient à un dispositif ou à un programme national. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante : Aidants Connect;Bibliothèques numérique de référence;Certification PIX; Conseillers numériques;Emmaüs Connect;France Services;Grande école du numérique;La Croix Rouge;Point d'accès numérique CAF;Promeneurs du net;Relais numérique (Emmaüs Connect)",
             "example": "Aidants Connect;Conseillers numériques;La Croix Rouge",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": ["Aidants Connect", 
-                        "Bibliothèques numérique de référence",
-                        "Certification PIX",
-                         "Conseillers numériques",
-                            "Emmaüs Connect",
-                            "France Services",
-                            "Grande école du numérique",
-                            "La Croix Rouge",
-                            "Point d'accès numérique CAF",
-                            "Promeneurs du net",
-                            "Relais numérique (Emmaüs Connect)"]        
+                  "pattern": "(?:(?:^|;)(Aidants Connect|Bibliothèques numérique de référence|Certification PIX|Conseillers numériques|Emmaüs Connect|France Services|Grande école du numérique |La Croix Rouge|Point d'accès numérique CAF|Promeneurs du net |Relais numérique \\(Emmaüs Connect\\)))+$"
                             }
         },
         {
             "name": "formations_labels",
             "title": "Formations et labels",
-            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ 'Autres formations ou labels'. Sélectionner une ou plusieurs valeurs séparées par un | parmi la liste suivante : Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illetrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA)",
+            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ 'Autres formations ou labels'. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante : Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illetrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA)",
             "example": "Formé à « Mon Espace Santé »;Arnia/MedNum BFC (Bourgogne-Franche-Comté)",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": ["Formé à « Mon Espace Santé »",
-                    "Formé à « DUPLEX » (illetrisme)",
-                    "Arnia/MedNum BFC (Bourgogne-Franche-Comté)",
-                    "Collectif ressources et acteurs réemploi (Normandie)",
-                    "Fabriques de Territoire",
-                    "Les Éclaireurs du numérique (Drôme)",
-                    "Mes Papiers (Métropole de Lyon)",
-                    "ORDI 3.0",
-                    "SUD LABS (PACA)"]         
+                "pattern": "(?:(?:^|;)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illetrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\) |ORDI 3.0|SUD LABS \\(PACA\\)))+$"
                             }
         },
         {
@@ -427,31 +385,24 @@
         {
             "name": "modalites_acces",
             "title": "Modalités d'accès",
-            "description": "Ce champ fournit des informations sur les différentes étapes ou démarches à suivre pour se rendre au lieu d'inclusion numérique et bénéficier de ses services. Sélectionner une ou plusieurs valeurs séparées par un | parmi la liste suivante : Se présenter;Téléphoner;Contacter par mail;Prendre un RDV en ligne;Ce lieu n'accueille pas de public;Envoyer un mail avec une fiche de prescription",
+            "description": "Ce champ fournit des informations sur les différentes étapes ou démarches à suivre pour se rendre au lieu d'inclusion numérique et bénéficier de ses services. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante : Se présenter;Téléphoner;Contacter par mail;Prendre un RDV en ligne;Ce lieu n'accueille pas de public;Envoyer un mail avec une fiche de prescription",
             "example": "Se présenter;Téléphoner",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": ["Se présenter",
-                    "Téléphoner",
-                    "Contacter par mail",
-                    "Prendre un RDV en ligne",
-                    "Ce lieu n'accueille pas de public",
-                    "Envoyer un mail avec une fiche de prescription"]            
+                "pattern": "(?:(?:^|;)(Se présenter|Téléphoner|Contacter par mail|Prendre un RDV en ligne|Ce lieu n'accueille pas de public|Envoyer un mail avec une fiche de prescription))+$"          
                             }
         },
         {
             "name": "modalites_accompagnement",
             "title": "Modalités d'accompagnement",
-            "description": "Ce champ indique les types d'accompagnement proposés par le lieu. Sélectionner une ou plusieurs valeurs séparées par un | parmi la liste suivante : En autonomie;Accompagnement individuel; Dans un atelier collectif : j'apprends collectivement à utiliser le numérique;À distance (par téléphone ou en visioconférence)",
+            "description": "Ce champ indique les types d'accompagnement proposés par le lieu. Sélectionner une ou plusieurs valeurs séparées par un point-virgule parmi la liste suivante : En autonomie;Accompagnement individuel; Dans un atelier collectif : j'apprends collectivement à utiliser le numérique;À distance (par téléphone ou en visioconférence)",
             "example": "Dans un atelier collectif (j'apprends collectivement à utiliser le numérique);À distance",
             "type": "string",
             "constraints": {
                 "required": false,
-                "enum": ["En autonomie",
-                    "Accompagnement individuel",
-                    "Dans un atelier collectif",
-                    "À distance"]           
+                "pattern": "(?:(?:^|;)(En autonomie|Accompagnement individuel|Dans un atelier collectif|À distance))+$"
+        
                             }
         },
         {
