@@ -82,11 +82,11 @@
             "role": "contributor"
         }
     ],
-    "version": "v0.2.0",
+    "version": "v1.0.0",
     "created": "2022-07-04",
     "updated": "2022-04-02",
     "homepage": "https://github.com/LaMednum/standard-mediation-num",
-    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v0.2.0/schema.json",
+    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v1.0.0/schema.json",
     "fields": [
         {
             "name": "id",
