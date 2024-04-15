@@ -104,7 +104,7 @@
             "type": "string",
             "constraints": {
                 "required": true,
-                "pattern": "^[a-zA-Z0-9]{9,10}$"
+                "pattern": "^[a-zA-Z0-9]{9,14}$"
             }
         },
         {
@@ -296,7 +296,7 @@
             "name": "date_maj",
             "title": "Date de mise à jour",
             "description": "Ce champ contient la date à laquelle la donnée considérée a été mise à jour. Il respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD).",
-            "example": "2022-06-02",
+            "example": "2024-04-02",
             "type": "date",
             "format": "default",
             "constraints": {
@@ -329,7 +329,7 @@
             "name": "prise_en_charge_specifique",
             "title": "Prise en charge spécifique",
             "description": "Ce champ permet d'informer si le lieu est en mesure d'accompagner et soutenir des publics ayant des besoins particuliers. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante :Surdité;Handicaps moteurs;Handicaps mentaux;Illettrisme;Langues étrangères (anglais);Langues étrangères (autres) sont tous des formes de déficience visuelle.",
-            "example": "Surdité|Illetrisme",
+            "example": "Surdité|Illettrisme|Langues étrangères (anglais)",
             "type": "string",
             "constraints": {
                 "required": false,
@@ -361,12 +361,12 @@
         {
             "name": "formations_labels",
             "title": "Formations et labels",
-            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ 'Autres formations ou labels'. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante : Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illetrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA)",
+            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ 'Autres formations ou labels'. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante : Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illettrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA)",
             "example": "Formé à « Mon Espace Santé »|Arnia/MedNum BFC (Bourgogne-Franche-Comté)",
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|\\|)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illetrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\)|ORDI 3.0|SUD LABS \\(PACA\\)))+$"
+                "pattern": "(?:(?:^|\\|)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illettrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\)|ORDI 3.0|SUD LABS \\(PACA\\)))+$"
             }
         },
         {
@@ -394,7 +394,7 @@
             "name": "modalites_accompagnement",
             "title": "Modalités d'accompagnement",
             "description": "Ce champ indique les types d'accompagnement proposés par le lieu. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante : En autonomie;Accompagnement individuel; Dans un atelier collectif : j'apprends collectivement à utiliser le numérique;À distance (par téléphone ou en visioconférence)",
-            "example": "Dans un atelier collectif|À distance",
+            "example": "Dans un atelier collectif|À distance|En autonomie|Accompagnement individuel",
             "type": "string",
             "constraints": {
                 "required": false,
