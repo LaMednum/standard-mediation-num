@@ -79,11 +79,11 @@
             "role": "contributor"
         }
     ],
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "created": "2022-07-04",
     "updated": "2024-04-11",
     "homepage": "https://github.com/LaMednum/standard-mediation-num",
-    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v1.0.0/schema.json",
+    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v1.0.1/schema.json",
     "fields": [
         {
             "name": "id",
@@ -310,7 +310,6 @@
             "example": "Maîtrise des outils numériques du quotidien|Insertion professionnelle via le numérique|Loisirs et créations numériques",
             "type": "string",
             "constraints": {
-                "required": true,
                 "pattern": "(?:(?:^|\\|)(Aide aux démarches administratives|Maîtrise des outils numériques du quotidien|Insertion professionnelle via le numérique|Utilisation sécurisée du numérique|Parentalité et éducation avec le numérique|Loisirs et créations numériques|Compréhension du monde numérique|Accès internet et matériel informatique|Acquisition de matériel informatique à prix solidaire))+$"
             }
         },
@@ -339,7 +338,7 @@
         {
             "name": "frais_a_charge",
             "title": "Frais à charge",
-            "description": "Ce champ indique les conditions financières d'accès au lieu. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante : Gratuit : Je peux accéder gratuitement au lieu et à ses services;Gratuit sous condition : La gratuité est conditionnée à des critères (adhésion, situation familiale, convention avec un organisme social, pass numériques…);Payant : L’accès au lieu et/ou à ses services est payant",
+            "description": "Ce champ indique les conditions financières d'accès au lieu. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante : Gratuit;Gratuit sous condition;Payant",
             "example": "Gratuit sous condition|Payant",
             "type": "string",
             "constraints": {
