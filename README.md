@@ -46,7 +46,7 @@ Les fichiers doivent, sauf exception et autant que possible, respecter les règl
 YYYY-MM-DD_idProducteur_lieux-de-mediation-numerique_territoire.csv
 
 * YYYY-MM-DD : Date de création du fichier
-* idProducteur :  Numéro SIRET (sur 14 chiffres) ou RNA (W + 9 chiffres) pour identifier le producteur
+* idProducteur : Numéro SIRET (sur 14 chiffres) ou RNA (W + 9 chiffres) pour identifier le producteur
 * lieux-de-mediation-numerique : nom du fichier, en minuscules non accentuées
 * territoire : Nom du territoire concerné, non accentué (exemple : BordeauxMetropole)
 * extension : Si les règles de formatage sont respectées, l'extension est .csv
@@ -57,5 +57,5 @@ Exemple : 2022-07-25_24330031600011_lieux-de-mediation-numerique_BordeauxMetropo
 Ces conseils reprennent ceux du [Socle commun des données locales publié par Open Data france](https://scdl.opendatafrance.net/docs/recommandations-relatives-aux-jeux-de-donnees.html)
 
 Les fichiers doivent comporter :
-* Toutes les colonnes, y compris celles dont les cellules ne sont pas renseignées, dans le bon ordre, et avec des en-têtes correctement nommées sur la première ligne (nom correspondant strictement au schéma)
+* Toutes les colonnes, y compris celles dont les cellules ne sont pas renseignées, dans le bon ordre, et avec des en-têtes correctement nommés sur la première ligne (nom correspondant strictement au schéma)
 * Autant de lignes que nécessaire comprenant des cellules dont les valeurs peuvent être obligatoires (elles doivent être impérativement renseignées) ou optionnelles (elles sont seulement recommandées ou soumises à condition de disponibilité / pertinence)

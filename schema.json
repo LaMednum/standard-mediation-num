@@ -79,11 +79,11 @@
             "role": "contributor"
         }
     ],
-    "version": "v1.0.1",
+    "version": "v1.0.2",
     "created": "2022-07-04",
     "updated": "2024-04-11",
     "homepage": "https://github.com/LaMednum/standard-mediation-num",
-    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v1.0.1/schema.json",
+    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v1.0.2/schema.json",
     "fields": [
         {
             "name": "id",
@@ -360,12 +360,12 @@
         {
             "name": "formations_labels",
             "title": "Formations et labels",
-            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ 'Autres formations ou labels'. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante : Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illettrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA)",
+            "description": "Ce champ indique si le lieu a obtenu un(e) ou plusieurs formations et labels. Cette liste est évolutive, si vous ne trouvez pas ce que vous cherchez vous pouvez vous référer au champ 'Autres formations ou labels'. Sélectionner une ou plusieurs valeurs séparées par un `|` parmi la liste suivante : Formé à « Mon Espace Santé »;Formé à « DUPLEX » (illettrisme);Arnia/MedNum BFC (Bourgogne-Franche-Comté);Collectif ressources et acteurs réemploi (Normandie);Étapes numériques (La Poste);Fabriques de Territoire;Les Éclaireurs du numérique (Drôme);Mes Papiers (Métropole de Lyon) ;ORDI 3.0;SUD LABS (PACA)",
             "example": "Formé à « Mon Espace Santé »|Arnia/MedNum BFC (Bourgogne-Franche-Comté)",
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|\\|)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illettrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\)|ORDI 3.0|SUD LABS \\(PACA\\)))+$"
+                "pattern": "(?:(?:^|\\|)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illettrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Étapes numériques\\(La Poste\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\)|ORDI 3.0|SUD LABS \\(PACA\\)))+$"
             }
         },
         {
