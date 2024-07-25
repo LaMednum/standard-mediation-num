@@ -1,0 +1,41 @@
+Comparaison des versions 0.1.1 et 1.0.1 du schéma de médiation numérique
+
+NOUVEAUX CHAMPS : 
+
+itinérance : Lieu itinérant ou fixe.
+
+dispositif_programmes_nationaux : Extraction des dispositifs nationaux de l’ancien champ “labels nationaux” pour créer ce nouveau champ.
+
+modalites_acces : Ce champ fournit des informations sur les différentes étapes ou démarches à suivre pour se rendre au lieu d'inclusion numérique et bénéficier de ses services (se présenter,téléphoner, contacter par mail, etc.)
+
+CHAMPS MODIFIÉS : 
+
+telephone : On peut désormais ajouter plusieurs numéros de téléphone.
+
+courriels : On peut désormais ajouter plusieurs mails.
+
+site_web :On peut désormais ajouter plusieurs sites web.
+
+presentation_resume : La limite est passée à 280 caractères.
+
+pivot : On permet maintenant de renseigner aussi le RNA ou le RIDET (SIRET, RNA, RIDET).
+
+publics_specifiquement_adresses : Extraction de certaines valeurs de l’ancien champ “publics accueillis”. Ce champ permet de spécifier si l'action du lieu est tournée vers un public spécifiquement adressé.
+
+prise_en_charge_specifique : Extraction des autres valeurs de l’ancien champ “publics accueillis”. Ce champ permet d'informer si le lieu est en mesure d'accompagner et soutenir des publics ayant des besoins particuliers.
+
+frais_a_charge : Renommage de l’ancien champ “Conditions d'accès”
+
+formations_labels : Extraction des labels et formations de l’ancien champ “labels nationaux” pour créer ce nouveau champ. Il s’agit des formations et labels obtenus par le lieu.
+
+autres_formations_labels : Renommage du champ “Autres labels”
+
+modalites_accompagnement : Évolution des valeurs du champ, la plupart ont été renommées pour plus de précisions et on a rajouté l’accompagnement à distance (par téléphone ou visioconférence).
+
+fiche_acces_libre : Renommage de l’ancien champ “Accessibilité / accueil handicap”
+
+Services : Condensation des 15 anciens services en 9 services, plus faciles à dissocier.
+
+Pour plus de détails, vous pouvez consulter la documentation du schéma ici:
+
+https://schema.data.gouv.fr/LaMednum/standard-mediation-num/1.0.1/documentation.html
