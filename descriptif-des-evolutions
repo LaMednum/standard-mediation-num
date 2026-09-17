@@ -1,3 +1,31 @@
+Comparaison des versions 1.0.2 et 2.0.0 du schéma de médiation numérique
+
+Les écarts corrigés ici ont tous été mesurés sur l'inventaire national du 17 septembre 2026, soit 18 769 lieux.
+
+CHAMP RETIRÉ :
+
+structure_parente : Aucun des 18 769 lieux ne renseigne ce champ, et aucun consommateur ne le lit. Il est retiré du schéma et du fichier d'exemple.
+
+CHAMPS DEVENUS FACULTATIFS :
+
+pivot : 13 131 lieux sur 18 769 — sept sur dix — publiaient « 00000000000000 » faute de connaître l'immatriculation. Une valeur fausse vaut moins qu'une absence : le champ devient facultatif.
+
+date_maj : 559 lieux publiaient « 1970-01-01 », le repli d'une transformation qui n'avait su lire aucun format, dont trois sources entières. Une date illisible est une date absente : le champ devient facultatif.
+
+CHAMPS RESSERRÉS :
+
+pivot : Le champ se restreint au SIRET. Le motif admettait encore le RNA et le RIDET, que cinq lieux sur 18 769 renseignent — 0,03 %. Ces cinq lieux se publient désormais sans pivot, le champ étant devenu facultatif.
+
+code_insee : Le motif est remplacé par celui du code officiel géographique. Le précédent acceptait « 96001 » et « 99123 », qui ne désignent aucun département. Le nouveau couvre la métropole, la Corse en 2A et 2B, et l'outre-mer. Vérifié : les 18 730 codes publiés passent tous.
+
+typologie : Le champ reçoit le motif de son vocabulaire. C'était le seul des dix vocabulaires fermés du schéma à ne porter aucune contrainte, alors qu'il est renseigné par quatre lieux sur cinq. Le motif est engendré à partir des 92 valeurs, et non écrit à la main. Vérifié : les 15 160 valeurs publiées passent toutes.
+
+INCOHÉRENCE CORRIGÉE :
+
+formations_labels : « Étapes numériques(La Poste) » retrouve l'espace avant la parenthèse, comme ses six voisins et comme la description du champ l'écrit déjà. Le motif était le seul endroit à le perdre. Aucun lieu ne porte cette valeur : la correction ne casse rien.
+
+---
+
 Comparaison des versions 0.1.1 et 1.0.1 du schéma de médiation numérique
 
 NOUVEAUX CHAMPS : 
