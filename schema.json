@@ -79,11 +79,11 @@
             "role": "contributor"
         }
     ],
-    "version": "v1.0.2",
+    "version": "v2.0.0",
     "created": "2022-07-04",
-    "updated": "2024-04-11",
+    "updated": "2026-09-17",
     "homepage": "https://github.com/LaMednum/standard-mediation-num",
-    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v1.0.2/schema.json",
+    "uri": "https://raw.githubusercontent.com/LaMednum/standard-mediation-num/v2.0.0/schema.json",
     "fields": [
         {
             "name": "id",
@@ -98,13 +98,13 @@
         },
         {
             "name": "pivot",
-            "title": "SIRET ou RNA ou RIDET",
-            "description": "Ce champ contient une donnée pivot provenant d'une des deux bases de référence : le répertoire SIRENE des entreprises et de leurs établissements de l'Insee ou le Répertoire national des associations du ministère de l'intérieur (RNA). Pour chaque lieu, il faut indiquer soit le code SIRET (dont disposent la majorité des associations) récupérable via annuaire-entreprises.data.gouv.fr soit le numéro RNA (Répertoire National des Associations) du lieu récupérable via journal-officiel.gouv.fr/pages/associations-recherche/. Les associations disposant d'un SIRET doivent renseigner uniquement ce code. Le RNA n'est à renseigner que dans le cas où une association ne disposerait pas de SIRET. Dans la mesure du possible, les concepteurs du schéma mettrons à disposition des outils pour associer facilement les données au SIRET correspondant. Dans le cas où le SIRET concernerait plusieurs lieux (plusieurs bibliothèques rattachées à une même commune par exemple), l'identification unique permettra de les dédoublonner. Si votre lieu se situe en Polynésie française ou en Nouvelle-Calédonie, nous vous invitons à renseigner le numéro de Répertoire d'Identification Des Entreprises et des Établissements (RIDET)  Ce champ est un pré-requis pour assurer la compatibilité avec data.inclusion.",
+            "title": "SIRET",
+            "description": "Ce champ contient le code SIRET de l'établissement, récupérable via annuaire-entreprises.data.gouv.fr. Il identifie la structure et permet de dédoublonner les lieux qui la partagent — plusieurs bibliothèques rattachées à une même commune, par exemple. Ce champ est un pré-requis pour assurer la compatibilité avec data.inclusion.",
             "example": "43493312300029",
             "type": "string",
             "constraints": {
-                "required": true,
-                "pattern": "^[a-zA-Z0-9]{9,14}$"
+                "required": false,
+                "pattern": "^\\d{14}$"
             }
         },
         {
@@ -146,7 +146,7 @@
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "^([013-9]\\d|2[AB1-9])\\d{3}$"
+                "pattern": "^(?:(?:0[1-9]|1\\d|2[AB]|2[1-9]|[3-8]\\d|9[0-5])\\d{3}|(?:97[1-8]|98[1-9])\\d{2})$"
             }
         },
         {
@@ -196,7 +196,8 @@
             "example": "TIERS_LIEUX|ASSO",
             "type": "string",
             "constraints": {
-                "required": false
+                "required": false,
+                "pattern": "(?:(?:^|\\|)(RELAIS_LECTURE|ASSO_CHOMEUR|RESSOURCERIE|TIERS_LIEUX|CAP_EMPLOI|PREVENTION|FABRIQUE|LA_POSTE|PENSION|PIJ_BIJ|ACIPHC|CAARUD|CITMET|FABLAB|RS_FJT|Autre|CCONS|CIDFF|CSAPA|DEETS|DIPLP|EPIDE|OACAS|PIMMS|AFPA|ASSO|AVIP|CADA|CAVA|CCAS|CDAS|CHRS|CIAS|CPAM|DEPT|EATT|EITI|EPCI|ESAT|ETTI|FAIS|GEIQ|HUDA|MDEF|MDPH|MSAP|MUNI|OPCS|PLIE|PREF|SPIP|UDAF|ACI|ASE|BIB|CAF|CFP|CHU|CMP|CMS|CPH|CSC|E2C|ENM|EPI|EPN|ESS|EVS|MDE|MDH|MDS|MJC|MSA|ODC|OIL|PAD|PJJ|REG|RFS|SCP|AI|CC|CD|CS|EA|EI|ES|FT|ML|MQ|OF|PI))+$"
             }
         },
         {
@@ -283,16 +284,6 @@
             }
         },
         {
-            "name": "structure_parente",
-            "title": "Structure parente",
-            "description": "Ce champ permet de décrire le réseau/la structure auquel le lieu appartient. Pour le remplir, indiquer le nom de cette entité.",
-            "example": "SIRET de la ville pour une bibliothèque",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
-        },
-        {
             "name": "date_maj",
             "title": "Date de mise à jour",
             "description": "Ce champ contient la date à laquelle la donnée considérée a été mise à jour. Il respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD).",
@@ -300,7 +291,7 @@
             "type": "date",
             "format": "default",
             "constraints": {
-                "required": true
+                "required": false
             }
         },
         {
@@ -365,7 +356,7 @@
             "type": "string",
             "constraints": {
                 "required": false,
-                "pattern": "(?:(?:^|\\|)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illettrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Étapes numériques\\(La Poste\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\)|ORDI 3.0|SUD LABS \\(PACA\\)))+$"
+                "pattern": "(?:(?:^|\\|)(Formé à « Mon Espace Santé »|Formé à « DUPLEX » \\(illettrisme\\)|Arnia/MedNum BFC \\(Bourgogne-Franche-Comté\\)|Collectif ressources et acteurs réemploi \\(Normandie\\)|Étapes numériques \\(La Poste\\)|Fabriques de Territoire|Les Éclaireurs du numérique \\(Drôme\\)|Mes Papiers \\(Métropole de Lyon\\)|ORDI 3.0|SUD LABS \\(PACA\\)))+$"
             }
         },
         {
